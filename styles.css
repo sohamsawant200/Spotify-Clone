@@ -11,7 +11,6 @@
 nav ul {
   display: flex;
   height: fit-content;
-  /* background-color: aliceblue; */
   align-items: center;
   list-style-type: none;
   padding: 10px;
@@ -19,8 +18,55 @@ nav ul {
 
 nav ul li {
   padding-right: 12px;
+  cursor: pointer;
 }
 
 .logo img {
   width: 50px;
+}
+
+.container {
+  margin: 40px;
+}
+
+.container h2{
+  font-size: larger;
+}
+
+.icons svg {
+  height: 50px;
+  width: auto;
+  margin:12px;
+}
+.icons svg{
+  fill: lightgray;
+}
+
+.icons svg:hover{
+  fill: white;
+}
+
+
+.bottom {
+  position: fixed;
+  bottom: 5px;
+  left: 0px;
+  right:0px;
+}
+
+#progressBar {
+  width: 80vw;
+}
+
+.icons{
+  height: 100px;
+  display:flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.range{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
