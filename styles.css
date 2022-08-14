@@ -1,11 +1,15 @@
 * {
   margin: 0;
   padding: 0%;
-  background-color: black;
+  /* background-color: black; */
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: large;
+}
+
+body{
+  background-color: black;
 }
 
 nav ul {
@@ -38,12 +42,12 @@ nav ul li {
   margin:12px;
 }
 .icons svg{
-  fill: lightgray;
+  fill: white;
   cursor: pointer;
 }
 
 .icons svg:hover{
-  fill: white;
+  fill: lightgray;
 }
 
 
@@ -74,41 +78,106 @@ nav ul li {
 .songList ul{
   list-style-type: none;
   margin-top: 20px; 
+  background-color: gray ;
 }
 
 .songItem{
   margin-top: 20px;
   display:flex;
-  background-color: gray;
+  justify-content: space-between;
+  background-color: gray !important;
   border-radius: 13px;
   align-content: center;
 }
 /* Needs to be vertically aligned */
-.songItem div{
+/* .songItem div{
   margin: 10px;
-  /* margin-left: 10px; */
+  margin-left: 10px;
   vertical-align: middle;
   background-color: gray;
+} */
+
+.image-title{
+  display: flex;
+  justify-content: left;
 }
 
-.songItem img{
+.songIMG{
   height: 40px;
   margin: 10px;
   align-self: center;
 }
 
-.playBtn svg{
-  height:40px;
+.songName{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: gray;
+  margin: 10px;
+}
+
+.img-icons{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 2.5vw;
+  color: red;
+}
+
+.img-icons svg{
+  height:30px;
   background-color:gray;
   fill:white;
   right:0;
   cursor: pointer;
 }
 
+.img-icons svg :hover{
+  fill:lightgray;
+}
+
+/* #play-btn{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 2.5vw;
+} */
+
+/* #pause-btn{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 2.5vw;
+} */
+
+/* #pause-btn svg{
+  height:30px;
+  background-color:gray;
+  fill:white;
+  right:0;
+  cursor: pointer;
+} */
+
+/* #play-btn svg{
+  height:30px;
+  background-color:gray;
+  fill:white;
+  right:0;
+  cursor: pointer;
+} */
+
+.item-none{
+  display:none;
+}
+
+.none{
+  display:none;
+}
+
 .songInfo{
-  /* margin-bottom:20px; */
-  /* position:absolute; */
+  position: absolute;
   left: 10vw;
+  margin-top: 20px;
 }
 
 .songInfo img{
