@@ -166,15 +166,8 @@ nav ul li {
   cursor: pointer;
 } */
 
-.item-none{
-  display:none;
-}
-
-.none{
-  display:none;
-}
-
 .songInfo{
+  display:flex;
   position: absolute;
   left: 10vw;
   margin-top: 20px;
@@ -182,4 +175,19 @@ nav ul li {
 
 .songInfo img{
   width: 70px;
+  opacity:0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#songName{
+    padding-left: 10px;
+    padding-top: 7px;
+}
+
+.item-none{
+  display:none;
+}
+
+.none{
+  display:none;
 }
